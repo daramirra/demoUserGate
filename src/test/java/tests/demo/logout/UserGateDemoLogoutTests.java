@@ -1,4 +1,4 @@
-package tests.visor.logout;
+package tests.demo.logout;
 
 import annotations.JiraIssue;
 import annotations.JiraIssues;

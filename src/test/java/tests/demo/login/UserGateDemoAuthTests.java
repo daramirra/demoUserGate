@@ -1,4 +1,4 @@
-package tests.visor.login;
+package tests.demo.login;
 
 import annotations.JiraIssue;
 import annotations.JiraIssues;
