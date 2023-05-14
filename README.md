@@ -2,13 +2,13 @@
 
 ## Технологии и инструменты
 
-> *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов и <code><strong>*REST-Assured*</strong></code> для API-тестов.*
+> *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов
 >
 >*Для сборки проекта используется <code><strong>*Gradle*</strong></code>.*
 >
 >*<code><strong>*JUnit 5*</strong></code> используется как фреймворк для модульного тестирования.*
 >
->*Запуск тестов выполняется из <code><strong>*Gitlab*</strong></code>.*
+>*Запуск тестов выполняется из <code><strong>*Jenkins*</strong></code>.*
 >
 >*<code><strong>*Selenoid*</strong></code> используется для запуска браузеров в контейнерах  <code><strong>*Docker*</strong></code>.*
 >
