@@ -27,7 +27,7 @@ public class UserGateDemoLogoutTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Выход из Системы")
     void logoutSuccessful() {

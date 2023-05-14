@@ -34,7 +34,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Лог консоли браузера на странице входа в Систему не содержит ошибок")
     void consoleLogShouldNotHaveErrors() {
@@ -48,7 +48,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Успешный вход в Систему")
     void loginSuccessful() {
@@ -63,7 +63,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Попытка входа в Систему с неверным логином")
     void inputInvalidLoginShowErrorMessage() {
@@ -77,7 +77,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Попытка входа в Систему с неверным паролем")
     void inputInvalidPwdShowErrorMessage() {
@@ -91,7 +91,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Попытка входа в Систему с незаполненным полем \"Пароль\"")
     void passwordCouldNotBeEmpty() {
@@ -105,7 +105,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Попытка входа в Систему с незаполненным полем \"Логин\"")
     void loginCouldNotBeEmpty() {
@@ -119,7 +119,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Попытка входа в Систему с незаполненными полями \"Логин\", \"Пароль\"")
     void loginAndPwdCouldNotBeEmpty() {
@@ -133,7 +133,7 @@ public class UserGateDemoAuthTests extends TestBase {
 
     @Layer("Web")
     @Tags({@Tag("Web"), @Tag("UI")})
-    @JiraIssues({@JiraIssue("HOMEWORK-")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
     @Test
     @DisplayName("Попытка входа в Систему с указанием спецсимволов в поле Логин")
     void loginValueWithSpecialCharacters() {
