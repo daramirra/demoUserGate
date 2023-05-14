@@ -11,6 +11,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import pages.UserGateDemoAppPage;
 import pages.Pages;
 import pages.login.UserGateAuthPage;
@@ -140,6 +142,20 @@ public class UserGateDemoAuthTests extends TestBase {
         UserGateAuthPage authPage = Pages.openAuthPage();
         authPage.checkLoginFormTitle(loginFormTitle);
         authPage.setLoginValue("!№%?*()_-=+/\\.,~`@#$^&|{[]};':\"<>");
+        authPage.setPasswordValue(passwordValue);
+        authPage.clickEnterButton();
+        authPage.checkErrorMessage(errorMessage);
+    }
+
+    @Layer("Web")
+    @Tags({@Tag("Web"), @Tag("UI")})
+    @JiraIssues({@JiraIssue("HOMEWORK-698")})
+    @ParameterizedTest(name = "Попытка входа в Систему с неверным регистром значения в поле Логин [{0}]")
+    @ValueSource(strings = {"Demo", "DEMO", "dEMO", "demO"})
+    void inputWrongFormatLogin(String loginValue) {
+        UserGateAuthPage authPage = Pages.openAuthPage();
+        authPage.checkLoginFormTitle(loginFormTitle);
+        authPage.setLoginValue(loginValue);
         authPage.setPasswordValue(passwordValue);
         authPage.clickEnterButton();
         authPage.checkErrorMessage(errorMessage);
